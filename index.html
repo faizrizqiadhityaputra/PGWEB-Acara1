@@ -2,75 +2,175 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acara 1 - html.css</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acara 1 - html.css</title>
+
+  <style>
+    /* Reset style */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #d62828;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      text-align: center;
+      color: #555;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #e63946;
+      margin: 20px 0;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+
+    /* Table Style */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 16px;
+    }
+
+    table th,
+    table td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    table th {
+      background: #457b9d;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    table tr:nth-child(even) {
+      background: #f1f1f1;
+    }
+
+    /* List Style */
+    h4 {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #1d3557;
+    }
+
+    ol {
+      padding-left: 25px;
+      margin-bottom: 20px;
+    }
+
+    ol li {
+      margin-bottom: 5px;
+    }
+
+    /* Hover efek */
+    table tr:hover {
+      background: #eaf4ff;
+      transition: 0.3s;
+    }
+  </style>
 </head>
 
 <body>
-    <main>
-        <!-- Judul -->
-        <h1 style="color:red">Jawa Tengah</h1>
-        <!-- Sub Judul -->
-        <h3>Kabupaten Banyudono</h3>
-        <hr>
-        <!-- Deskripsi -->
-        <p>Kabupaten Boyolali adalah kabupaten di Jawa Tengah dengan ibu kota di Kecamatan Boyolali, terletak di sekitar
-            25 km barat Kota Surakarta,
-            dan memiliki julukan "Bumi Susu" serta "New Zealand van Java" karena merupakan daerah produsen susu yang
-            signifikan. </p>
-        <p>Wilayahnya berbukit dan pegunungan, dengan titik tertinggi
-            di Kecamatan Selo yang berdekatan dengan Gunung Merapi dan Merbabu, serta memiliki luas wilayah sekitar
-            1.080,93 km². </p>
-        <hr>
+  <main>
+    <!-- Judul -->
+    <h1>Jawa Tengah</h1>
+    <!-- Sub Judul -->
+    <h3>Kabupaten Banyudono</h3>
+    <hr>
 
-        <!-- Table Jumlah Penduduk -->
-        <table>
-            <tr>
-                <th>No</th>
-                <th>Jenis Kelamin</th>
-                <th>Jumlah Penduduk</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Laki Laki</td>
-                <td>543.113</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Perempuan</td>
-                <td>536.839</td>
-            </tr>
+    <!-- Deskripsi -->
+    <p>Kabupaten Boyolali adalah kabupaten di Jawa Tengah dengan ibu kota di Kecamatan Boyolali, terletak di sekitar
+      25 km barat Kota Surakarta,
+      dan memiliki julukan "Bumi Susu" serta "New Zealand van Java" karena merupakan daerah produsen susu yang
+      signifikan. </p>
+    <p>Wilayahnya berbukit dan pegunungan, dengan titik tertinggi
+      di Kecamatan Selo yang berdekatan dengan Gunung Merapi dan Merbabu, serta memiliki luas wilayah sekitar
+      1.080,93 km². </p>
+    <hr>
 
-            <!-- List Kecamatan -->
-            <h4>Kecamatan</h4>
-            <ol>
-                <li> Ampel,</li>
-                <li> Andong, </li>
-                <li> Banyudono, </li>
-                <li> Boyolali, </li>
-                <li> Cepogo, </li>
-                <li> Gladagsari, </li>
-                <li> Juwangi, </li>
-                <li> Karanggede, </li>
-                <li> Kemusu, </li>
-                <li> Klego, </li>
-                <li> Mojosongo, </li>
-                <li> Musuk, </li>
-                <li> Ngemplak, </li>
-                <li> Nogosari, </li>
-                <li> Sambi, </li>
-                <li> Sawit, </li>
-                <li> Selo, </li>
-                <li> Simo, </li>
-                <li> Tamansari, </li>
-                <li> Teras, </li>
-                <li> Wonosamodro, </li>
-                <li> dan Wonosegoro.
-            </ol>
+    <!-- Table Jumlah Penduduk -->
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Jenis Kelamin</th>
+        <th>Jumlah Penduduk</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Laki Laki</td>
+        <td>543.113</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Perempuan</td>
+        <td>536.839</td>
+      </tr>
+    </table>
 
-        </table>
-    </main>
+    <!-- List Kecamatan -->
+    <h4>Kecamatan</h4>
+    <ol>
+      <li>Ampel</li>
+      <li>Andong</li>
+      <li>Banyudono</li>
+      <li>Boyolali</li>
+      <li>Cepogo</li>
+      <li>Gladagsari</li>
+      <li>Juwangi</li>
+      <li>Karanggede</li>
+      <li>Kemusu</li>
+      <li>Klego</li>
+      <li>Mojosongo</li>
+      <li>Musuk</li>
+      <li>Ngemplak</li>
+      <li>Nogosari</li>
+      <li>Sambi</li>
+      <li>Sawit</li>
+      <li>Selo</li>
+      <li>Simo</li>
+      <li>Tamansari</li>
+      <li>Teras</li>
+      <li>Wonosamodro</li>
+      <li>Wonosegoro</li>
+    </ol>
+  </main>
 </body>
 
 </html>
